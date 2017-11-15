@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context="com.transporte.cicese.transportaciones_cicese.RegistroPasajeroActivity">
+
+    <TextView
+        android:id="@+id/textViewRC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="@string/capture_los_siguientes_datos"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/usuario_generado"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="@string/usuario_generado"
+        android:inputType="text"
+        android:layout_below="@+id/textViewRC"
+        android:layout_alignStart="@+id/ap_pasajero" />
+
+    <EditText
+        android:id="@+id/contrasena_pasajero"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/contrase_aChofer"
+        android:inputType="textWebPassword"
+        android:layout_below="@+id/usuario_generado"
+        android:layout_alignStart="@+id/usuario_generado" />
+
+
+    <EditText
+        android:id="@+id/nombre_pasajero"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        android:layout_below="@+id/contrasena_pasajero"
+        android:layout_alignStart="@+id/contrasena_pasajero" />
+
+
+    <EditText
+        android:id="@+id/ap_pasajero"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="@string/apellido_paterno"
+        android:inputType="text"
+        android:layout_below="@+id/nombre_pasajero"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/am_pasajero"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/ap_pasajero"
+        android:layout_below="@+id/ap_pasajero"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="@string/apellido_materno"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/tel_pasajero"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/am_pasajero"
+        android:layout_below="@+id/am_pasajero"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="@string/tel_fono"
+        android:inputType="phone" />
+
+
+    <TextView
+        android:id="@+id/camposObligatorios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tel_pasajero"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Asegurese que todos los datos sean correctos"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/registroPasajero_btn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/secondary_button_style"
+        android:text="@string/aceptar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:layout_alignTop="@+id/tel_pasajero"
+        android:layout_alignStart="@+id/tel_pasajero"
+        android:layout_alignEnd="@+id/tel_pasajero" />
+
+</RelativeLayout>

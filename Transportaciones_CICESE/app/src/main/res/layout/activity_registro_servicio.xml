@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context="com.transporte.cicese.transportaciones_cicese.RegistroPasajeroActivity">
+
+    <ScrollView
+        android:id="@+id/servicioR"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/solicitudR"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:layout_width="357dp"
+            android:layout_height="900dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewDA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Llenar los siguientes campos"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/descripcion_lugar_encuentro"
+                android:layout_marginStart="29dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textViewDE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewDA"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:text="Datos de encuentro"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/descripcion_lugar_encuentro"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="@string/descripci_n"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/nombre_pasajero"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/descripcion_lugar_encuentro"
+                android:layout_below="@+id/descripcion_lugar_encuentro"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="@string/longitud"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/ap_pasajero"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/nombre_pasajero"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/nombre_pasajero"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="@string/latitud"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/horaEncuentro"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/nombre_pasajero"
+                android:layout_below="@+id/nombre_pasajero"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="@string/hora"
+                android:inputType="time" />
+
+
+            <EditText
+                android:id="@+id/fecha_encuentro"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/horaEncuentro"
+                android:layout_alignBottom="@+id/horaEncuentro"
+                android:layout_alignEnd="@+id/descripcion_lugar_encuentro"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="@string/fecha"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/textViewDD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Datos de destino"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:layout_below="@+id/fecha_encuentro"
+                android:layout_centerHorizontal="true"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/descripcion_lugar_destino"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="@string/descripci_n"
+                android:inputType="text"
+                android:layout_below="@+id/textViewDD"
+                android:layout_alignEnd="@+id/ap_pasajero" />
+
+            <EditText
+                android:id="@+id/usuario_generado"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/descripcion_lugar_destino"
+                android:layout_below="@+id/descripcion_lugar_destino"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="@string/longitud"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/contrasena_pasajero"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="@string/latitud"
+                android:inputType=""
+                android:layout_alignBaseline="@+id/usuario_generado"
+                android:layout_alignBottom="@+id/usuario_generado"
+                android:layout_alignEnd="@+id/descripcion_lugar_destino" />
+
+
+            <TextView
+                android:id="@+id/textViewDV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Datos del vehículo"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:layout_below="@+id/contrasena_pasajero"
+                android:layout_centerHorizontal="true"
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/modelo_vehiculo"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/descripcion_lugar_encuentro"
+                android:layout_below="@+id/textViewDV"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="Modelo (Focus, Camry, Spectra,...)"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/marca_vehiculo"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="Marca (Ford, Toyota, Kia,...)"
+                android:inputType="text"
+                android:layout_below="@+id/modelo_vehiculo"
+                android:layout_alignStart="@+id/modelo_vehiculo"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/anio_vehiculo"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/marca_vehiculo"
+                android:layout_below="@+id/marca_vehiculo"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="Año"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/color_vehiculo"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="Color"
+                android:inputType="text"
+                android:layout_alignBaseline="@+id/anio_vehiculo"
+                android:layout_alignBottom="@+id/anio_vehiculo"
+                android:layout_alignEnd="@+id/marca_vehiculo"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/numero_placas"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="Número de placas"
+                android:inputType="text"
+                android:layout_below="@+id/anio_vehiculo"
+                android:layout_alignStart="@+id/usuario_generado"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/tipo_vehiculo"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="Tipo (Sedan, Camioneta, Van,...)"
+                android:inputType="text"
+                android:layout_below="@+id/numero_placas"
+                android:layout_alignStart="@+id/numero_placas"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/id_chofer"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tipo_vehiculo"
+                android:layout_alignStart="@+id/tipo_vehiculo"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_style"
+                android:ems="10"
+                android:hint="Identificador de chofer (ComboBox con llenado automatico)"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/registrarServicio"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/secondary_button_style"
+                android:text="@string/aceptar"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:layout_below="@+id/id_chofer"
+                android:layout_alignStart="@+id/id_chofer"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context="com.transporte.cicese.transportaciones_cicese.InicioAsistenteActivity">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Bienvenido"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Seleccione una opción"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/registrarChofer_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_style"
+        android:text="@string/RegistrarChoferbutton"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/registrarPasajero_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_style"
+        android:text="@string/registrar_pasajero"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/registrarChofer_btn"
+        android:layout_alignStart="@+id/registrarChofer_btn"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/registrarChofer_btn" />
+
+    <Button
+        android:id="@+id/registrarAsistente_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_style"
+        android:text="Registrar asistente"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/registrarPasajero_btn"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/registrarPasajero_btn"
+        android:layout_alignEnd="@+id/registrarPasajero_btn" />
+
+    <Button
+        android:id="@+id/registrarSol_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tercer_button_style"
+        android:text="Registrar solicitud"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/registrarAsistente_btn"
+        android:layout_alignEnd="@+id/registrarAsistente_btn"
+        android:layout_alignStart="@+id/registrarAsistente_btn" />
+
+    <Button
+        android:id="@+id/actualizarSol_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tercer_button_style"
+        android:text="Actualizar solicitud"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/registrarSol_btn"
+        android:layout_alignEnd="@+id/registrarSol_btn"
+        android:layout_alignStart="@+id/registrarSol_btn" />
+
+    <Button
+        android:id="@+id/consultarSer_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/actualizarSol_btn"
+        android:layout_alignStart="@+id/actualizarSol_btn"
+        android:layout_below="@+id/actualizarSol_btn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tercer_button_style"
+        android:text="Consultar servicios"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:backgroundTint="@android:color/background_light"
+        app:srcCompat="@drawable/chat_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp" />
+
+</RelativeLayout>
